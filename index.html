@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Potential Unicorn Seed Series</title>
     <link rel="icon" type="image/png" href="unicorn.png">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <style>
@@ -17,7 +18,7 @@
 
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             background-color: var(--moonstone);
         }
 
@@ -28,8 +29,8 @@
         }
 
         header.hero .logo img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 50%;
         }
@@ -69,8 +70,8 @@
         }
 
         section.founders-section .founder img {
-            width: 150px;
-            height: 150px;
+            width: 200px;
+            height: 200px;
             object-fit: cover;
             border-radius: 50%;
         }
@@ -114,6 +115,38 @@
 
         section.portfolio-section .company p {
             font-size: 16px;
+        }
+
+        section.contact-section {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        section.contact-section form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        section.contact-section form input[type="text"],
+        section.contact-section form input[type="email"],
+        section.contact-section form textarea {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: 'Lato', sans-serif;
+        }
+
+        section.contact-section form button {
+            padding: 10px 20px;
+            background-color: var(--raisin-black);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Lato', sans-serif;
+            cursor: pointer;
         }
     </style>
     
@@ -176,14 +209,13 @@
         </div>
     </section>
     
-	
-	    <section class="statement-section">
+    <section class="statement-section">
         <h2>Be a PUSS Pioneer, Ensure Your Startup's Future.&nbsp;</h2>
         <p>
- Our philosophy is to "pussyify" and declaw our founders. This approach is designed to cultivate a fertile environment for the core idea to thrive, allowing the founders to focus on building the groundwork. Once this <strong>throbbing</strong> foundation has been <strong>erected</strong>, our more seasoned executives, CEOs and CTOs, are able to step in, providing the necessary leadership and strategic guidance to <strong>thrust </strong>the company towards success.This unique approach has proven effective in nurturing potential unicorns, setting them on the path of exponential growth and success.   
-	</p>
-	</section>
-	
+            Our philosophy is to "pussyify" and declaw our founders. This approach is designed to cultivate a fertile environment for the core idea to thrive, allowing the founders to focus on building the groundwork. Once this <strong>throbbing</strong> foundation has been <strong>erected</strong>, our more seasoned executives, CEOs and CTOs, are able to step in, providing the necessary leadership and strategic guidance to <strong>thrust</strong> the company towards success. This unique approach has proven effective in nurturing potential unicorns, setting them on the path of exponential growth and success.   
+        </p>
+    </section>
+    
     <section class="founders-section">
         <div class="founder">
             <img src="ben.png" alt="Benjamin Dover">
@@ -195,15 +227,22 @@
             <h3>Jenna Talia</h3>
             <p>Co-Founder | Partner</p>
         </div>
-		
-		<div class="founder">
-    <img src="mike.png" alt="Mike Litoris">
-    <h3>Mike Litoris</h3>
-    <p>Co-Founder | Partner</p>
-	</div>
-		
+        <div class="founder">
+            <img src="mike.png" alt="Mike Litoris">
+            <h3>Mike Litoris</h3>
+            <p>Co-Founder | Partner</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
     
-
 </body>
 </html>
