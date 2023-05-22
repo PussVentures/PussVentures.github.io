@@ -148,6 +148,14 @@
             font-family: 'Lato', sans-serif;
             cursor: pointer;
         }
+		 a {
+    color: var(--raisin-black);
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
     </style>
     
     <header class="hero">
@@ -273,15 +281,28 @@
 </style>
 
 
-    <section class="contact-section">
-        <h2>Contact Us</h2>
-        <form action="contact.php" method="POST">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
+  <section class="contact-section">
+  <h2>Contact Us</h2>
+  <p>How about we deepen our ties? Feel free to take the plunge and directly stroke a conversation with Ben at PUSS Ventures for a more...fulfilling interaction: <a href="mailto:ben@potentialunicornseedseries.com">ben@potentialunicornseedseries.com</a></p>
+</section>
+
+	<footer>
+  <p>PUSS Ventures LLP</p>
+</footer>
+
+<style>
+  footer {
+    background-color: var(--raisin-black);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 18px;
+  }
+
+  footer p {
+    margin: 0;
+  }
+</style>
     
 </body>
 </html>
